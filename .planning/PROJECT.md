@@ -8,6 +8,17 @@ A website for a professional association to help prospective and current members
 
 Members can quickly find relevant association events and RSVP without friction.
 
+## Current Milestone: v1.0 Initial Release
+
+**Goal:** Launch the first web release for the association events platform.
+
+**Target features:**
+- Public visitors can browse upcoming association events.
+- Members can sign in and RSVP for events.
+- Staff can create, edit, and publish events.
+- Staff can manage RSVP lists.
+- Staff can manage member records, including membership status.
+
 ## Requirements
 
 ### Validated
@@ -73,4 +84,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-04 after initialization*
+*Last updated: 2026-04-04 after milestone v1.0 start*
