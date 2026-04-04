@@ -7,7 +7,7 @@
   "firecrawl": false,
   "exa_search": false,
   "git": {
-    "branching_strategy": "phase",
+    "branching_strategy": "none",
     "phase_branch_template": "gsd/phase-{phase}-{slug}",
     "milestone_branch_template": "gsd/{milestone}-{slug}",
     "quick_branch_template": null
@@ -23,7 +23,7 @@
     "ui_phase": true,
     "ui_safety_gate": true,
     "text_mode": false,
-    "research_before_questions": true,
+    "research_before_questions": false,
     "discuss_mode": "discuss",
     "skip_discuss": false
   },
