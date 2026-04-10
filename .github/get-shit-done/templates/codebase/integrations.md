@@ -42,10 +42,10 @@ Template for `.planning/codebase/INTEGRATIONS.md` - captures external service de
   - Migrations: [e.g., "prisma migrate in migrations/"]
 
 **File Storage:**
-- [Service] - [e.g., "AWS S3 for user uploads"]
-  - SDK/Client: [e.g., "@aws-sdk/client-s3"]
-  - Auth: [e.g., "IAM credentials in AWS_* env vars"]
-  - Buckets: [e.g., "prod-uploads, dev-uploads"]
+- [Service] - [e.g., "Azure Blob Storage for user uploads", "AWS S3 for user uploads"]
+  - SDK/Client: [e.g., "@azure/storage-blob", "@aws-sdk/client-s3"]
+  - Auth: [e.g., "DefaultAzureCredential via AZURE_* env vars", "IAM credentials in AWS_* env vars"]
+  - Containers/Buckets: [e.g., "prod-uploads, dev-uploads"]
 
 **Caching:**
 - [Service] - [e.g., "Redis for session storage"]
@@ -78,15 +78,15 @@ Template for `.planning/codebase/INTEGRATIONS.md` - captures external service de
   - Events tracked: [e.g., "user actions, page views"]
 
 **Logs:**
-- [Service] - [e.g., "CloudWatch", "Datadog", "none (stdout only)"]
-  - Integration: [e.g., "AWS Lambda built-in"]
+- [Service] - [e.g., "Azure Monitor", "Application Insights", "Datadog", "none (stdout only)"]
+  - Integration: [e.g., "Azure App Service built-in", "Application Insights SDK"]
 
 ## CI/CD & Deployment
 
 **Hosting:**
-- [Platform] - [e.g., "Vercel", "AWS Lambda", "Docker on ECS"]
-  - Deployment: [e.g., "automatic on main branch push"]
-  - Environment vars: [e.g., "configured in Vercel dashboard"]
+- [Platform] - [e.g., "Azure App Service", "Azure Functions", "Vercel", "Docker on Azure Container Apps"]
+  - Deployment: [e.g., "automatic on main branch push", "azd up", "GitHub Actions"]
+  - Environment vars: [e.g., "configured in Azure portal / App Configuration"]
 
 **CI Pipeline:**
 - [Service] - [e.g., "GitHub Actions"]

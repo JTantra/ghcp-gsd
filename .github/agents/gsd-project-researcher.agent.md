@@ -1,8 +1,8 @@
 ---
 name: gsd-project-researcher
 description: Researches domain ecosystem before roadmap creation. Produces files in .planning/research/ consumed during roadmap creation. Spawned by /gsd-new-project or /gsd-new-milestone orchestrators.
-tools: ['read', 'edit', 'execute', 'search', 'web', 'context7/*', 'mslearn/*', 'exa/*']
-color: cyan
+model: Claude Opus 4.6 (copilot)
+tools: ['read', 'edit', 'execute', 'search', 'web', 'context7/*', 'mslearn/*']
 ---
 
 
@@ -111,30 +111,17 @@ If `brave_search: false` (or not set), use built-in WebSearch tool instead.
 
 Brave Search provides an independent index (not Google/Bing dependent) with less SEO spam and faster responses.
 
-### Exa Semantic Search (MCP)
+### MS Learn — Microsoft Technologies & Best Practices
 
-Check `exa_search` from orchestrator context. If `true`, use Exa for research-heavy, semantic queries:
-
-```
-mcp__exa__web_search_exa with query: "your semantic query"
-```
-
-**Best for:** Research questions where keyword search fails — "best approaches to X", finding technical/academic content, discovering niche libraries, ecosystem exploration. Returns semantically relevant results rather than keyword matches.
-
-If `exa_search: false` (or not set), fall back to WebSearch or Brave Search.
-
-### Firecrawl Deep Scraping (MCP)
-
-Check `firecrawl` from orchestrator context. If `true`, use Firecrawl to extract structured content from discovered URLs:
+For Microsoft/Azure related technologies, use MS Learn MCP for authoritative documentation:
 
 ```
-mcp__firecrawl__scrape with url: "https://docs.example.com/guide"
-mcp__firecrawl__search with query: "your query" (web search + auto-scrape results)
+1. mslearn/microsoft_docs_search with query: "[topic]" — search official docs
+2. mslearn/microsoft_code_sample_search with query: "[topic]" — find code samples
+3. mslearn/microsoft_docs_fetch with url: "[url]" — fetch full doc content
 ```
 
-**Best for:** Extracting full page content from documentation, blog posts, GitHub READMEs, comparison articles. Use after finding a relevant URL from Exa, WebSearch, or known docs. Returns clean markdown instead of raw HTML.
-
-If `firecrawl: false` (or not set), fall back to WebFetch.
+**Best for:** Azure services, .NET, TypeScript/Node.js patterns from Microsoft, authentication (MSAL/Entra), deployment best practices, and any Microsoft ecosystem technology.
 
 ## Verification Protocol
 
@@ -143,7 +130,7 @@ If `firecrawl: false` (or not set), fall back to WebFetch.
 ```
 For each finding:
 1. Verify with Context7? YES → HIGH confidence
-2. Verify with official docs? YES → MEDIUM confidence
+2. Verify with official docs / MS Learn? YES → MEDIUM confidence
 3. Multiple sources agree? YES → Increase one level
    Otherwise → LOW confidence, flag for validation
 ```
@@ -154,11 +141,11 @@ Never present LOW confidence findings as authoritative.
 
 | Level | Sources | Use |
 |-------|---------|-----|
-| HIGH | Context7, official documentation, official releases | State as fact |
+| HIGH | Context7, MS Learn, official documentation, official releases | State as fact |
 | MEDIUM | WebSearch verified with official source, multiple credible sources agree | State with attribution |
 | LOW | WebSearch only, single source, unverified | Flag as needing validation |
 
-**Source priority:** Context7 → Exa (verified) → Firecrawl (official docs) → Official GitHub → Brave/WebSearch (verified) → WebSearch (unverified)
+**Source priority:** Context7 → MS Learn (official Microsoft docs) → Official GitHub → Brave/WebSearch (verified) → WebSearch (unverified)
 
 </tool_strategy>
 

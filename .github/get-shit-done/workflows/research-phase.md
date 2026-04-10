@@ -63,6 +63,8 @@ ${AGENT_SKILLS_RESEARCHER}
 
 <additional_context>
 Phase description: {description}
+
+**Infrastructure preference:** Azure is the preferred cloud platform. For infrastructure, hosting, deployment, or cloud service research, default to Azure services and use mslearn/* tools for official Microsoft documentation.
 </additional_context>
 
 <output>

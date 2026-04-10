@@ -1,8 +1,8 @@
 ---
 name: gsd-phase-researcher
 description: Researches how to implement a phase before planning. Produces RESEARCH.md consumed by gsd-planner. Spawned by /gsd-plan-phase orchestrator.
-tools: ['read', 'edit', 'execute', 'search', 'web', 'context7/*', 'mslearn/*', 'exa/*']
-color: cyan
+model: Claude Opus 4.6 (copilot)
+tools: ['read', 'edit', 'execute', 'search', 'web', 'context7/*', 'mslearn/*']
 ---
 
 
@@ -134,30 +134,17 @@ If `brave_search: false` (or not set), use built-in WebSearch tool instead.
 
 Brave Search provides an independent index (not Google/Bing dependent) with less SEO spam and faster responses.
 
-### Exa Semantic Search (MCP)
+### MS Learn — Microsoft Technologies & Best Practices
 
-Check `exa_search` from init context. If `true`, use Exa for semantic, research-heavy queries:
-
-```
-mcp__exa__web_search_exa with query: "your semantic query"
-```
-
-**Best for:** Research questions where keyword search fails — "best approaches to X", finding technical/academic content, discovering niche libraries. Returns semantically relevant results.
-
-If `exa_search: false` (or not set), fall back to WebSearch or Brave Search.
-
-### Firecrawl Deep Scraping (MCP)
-
-Check `firecrawl` from init context. If `true`, use Firecrawl to extract structured content from URLs:
+For Microsoft/Azure related technologies, use MS Learn MCP for authoritative documentation:
 
 ```
-mcp__firecrawl__scrape with url: "https://docs.example.com/guide"
-mcp__firecrawl__search with query: "your query" (web search + auto-scrape results)
+1. mslearn/microsoft_docs_search with query: "[topic]" — search official docs
+2. mslearn/microsoft_code_sample_search with query: "[topic]" — find code samples
+3. mslearn/microsoft_docs_fetch with url: "[url]" — fetch full doc content
 ```
 
-**Best for:** Extracting full page content from documentation, blog posts, GitHub READMEs. Use after finding a URL from Exa, WebSearch, or known docs. Returns clean markdown.
-
-If `firecrawl: false` (or not set), fall back to WebFetch.
+**Best for:** Azure services, .NET, TypeScript/Node.js patterns from Microsoft, authentication (MSAL/Entra), deployment best practices, and any Microsoft ecosystem technology.
 
 ## Verification Protocol
 
@@ -183,7 +170,7 @@ For each WebSearch finding:
 | MEDIUM | WebSearch verified with official source, multiple credible sources | State with attribution |
 | LOW | WebSearch only, single source, unverified | Flag as needing validation |
 
-Priority: Context7 > Exa (verified) > Firecrawl (official docs) > Official GitHub > Brave/WebSearch (verified) > WebSearch (unverified)
+Priority: Context7 > MS Learn (official Microsoft docs) > Official GitHub > Brave/WebSearch (verified) > WebSearch (unverified)
 
 </source_hierarchy>
 

@@ -1,8 +1,8 @@
 ---
 name: gsd-ui-checker
 description: Validates UI-SPEC.md design contracts against 6 quality dimensions. Produces BLOCK/FLAG/PASS verdicts. Spawned by /gsd-ui-phase orchestrator.
+model: Gemini 3.1 Pro (Preview) (copilot)
 tools: ['read', 'execute', 'search']
-color: #22D3EE
 ---
 
 

@@ -501,7 +501,7 @@ After user selects gray areas in present_gray_areas, spawn parallel research age
 
      Research this gray area and return a structured comparison table with rationale.
      ${AGENT_SKILLS_ADVISOR}",
-     subagent_type="general-purpose",
+     subagent_type="gsd-advisor-researcher",
      model="{ADVISOR_MODEL}",
      description="Research: {area_name}"
    )
@@ -574,22 +574,25 @@ For each selected area, conduct a focused discussion loop.
 
 **Research-before-questions mode:** Check if `workflow.research_before_questions` is enabled in config (from init context or `.planning/config.json`). When enabled, before presenting questions for each area:
 1. Do a brief web search for best practices related to the area topic
-2. Summarize the top findings in 2-3 bullet points
-3. Present the research alongside the question so the user can make a more informed decision
+2. For infrastructure/cloud/deployment topics, prefer MS Learn (`mslearn/microsoft_docs_search`) as the primary research source — Azure is the preferred cloud platform
+3. Summarize the top findings in 2-3 bullet points
+4. Present the research alongside the question so the user can make a more informed decision
 
 Example with research enabled:
 ```
 Let's talk about [Authentication Strategy].
 
-📊 Best practices research:
+📊 Best practices research (sourced from MS Learn + web):
 • OAuth 2.0 + PKCE is the current standard for SPAs (replaces implicit flow)
+• Microsoft Entra ID (Azure AD) provides enterprise-grade identity with MSAL SDKs
 • Session tokens with httpOnly cookies preferred over localStorage for XSS protection
-• Consider passkey/WebAuthn support — adoption is accelerating in 2025-2026
 
 With that context: How should users authenticate?
 ```
 
 When disabled (default), skip the research and present questions directly as before.
+
+**Infrastructure preference:** When discussing infrastructure, hosting, deployment, or cloud services, default to Azure services (App Service, Functions, Cosmos DB, Blob Storage, etc.) unless the user explicitly prefers another provider. Use `mslearn/microsoft_docs_search` and `mslearn/microsoft_docs_fetch` to ground recommendations in official Microsoft documentation.
 
 **Text mode support:** Parse optional `--text` from `$ARGUMENTS`.
 - Accept `--text` flag OR read `workflow.text_mode` from config (from init context)

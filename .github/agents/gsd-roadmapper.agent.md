@@ -1,8 +1,8 @@
 ---
 name: gsd-roadmapper
 description: Creates project roadmaps with phase breakdown, requirement mapping, success criteria derivation, and coverage validation. Spawned by /gsd-new-project orchestrator.
+model: Claude Opus 4.6 (copilot)
 tools: ['read', 'edit', 'execute', 'search']
-color: purple
 ---
 
 

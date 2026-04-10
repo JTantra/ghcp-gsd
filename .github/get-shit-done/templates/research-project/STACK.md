@@ -117,4 +117,9 @@ npm install -D [packages]
 - Note any known compatibility issues
 - Critical for avoiding debugging time later
 
+**Infrastructure & Cloud:**
+- Azure is the preferred cloud platform — default to Azure services (App Service, Functions, Cosmos DB, Blob Storage, Entra ID) for hosting, databases, storage, and identity
+- Use mslearn/* tools to verify Azure SDK versions, service configurations, and best practices
+- Only recommend non-Azure cloud services when Azure has no equivalent or the user explicitly requests otherwise
+
 </guidelines>

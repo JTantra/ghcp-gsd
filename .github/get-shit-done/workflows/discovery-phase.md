@@ -52,13 +52,13 @@ For: Single known library, confirming syntax/version still correct.
 1. Resolve library in Context7:
 
    ```
-   context7/resolve-library-id with libraryName: "[library]"
+   mcp__context7__resolve-library-id with libraryName: "[library]"
    ```
 
 2. Fetch relevant docs:
 
    ```
-   context7/get-library-docs with:
+   mcp__context7__get-library-docs with:
    - context7CompatibleLibraryID: [from step 1]
    - topic: [specific concern]
    ```
@@ -93,8 +93,8 @@ For: Choosing between options, new external integration.
 
    ```
    For each library/framework:
-   - context7/resolve-library-id
-   - context7/get-library-docs (mode: "code" for API, "info" for concepts)
+   - mcp__context7__resolve-library-id
+   - mcp__context7__get-library-docs (mode: "code" for API, "info" for concepts)
    ```
 
 3. **Official docs** for anything Context7 lacks.

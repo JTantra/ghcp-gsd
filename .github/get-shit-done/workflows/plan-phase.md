@@ -307,6 +307,8 @@ ${AGENT_SKILLS_RESEARCHER}
 **Phase description:** {phase_description}
 **Phase requirement IDs (MUST address):** {phase_req_ids}
 
+**Infrastructure preference:** Azure is the preferred cloud platform. For any infrastructure, hosting, deployment, or cloud service decisions, default to Azure services (App Service, Functions, Cosmos DB, Blob Storage, etc.). Use mslearn/* tools for Azure documentation and best practices.
+
 **Project instructions:** Read ./copilot-instructions.md if exists — follow project-specific guidelines
 **Project skills:** Check .github/skills/ or .agents/skills/ directory (if either exists) — read SKILL.md files, research should account for project skill patterns
 </additional_context>

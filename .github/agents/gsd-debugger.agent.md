@@ -1,8 +1,8 @@
 ---
 name: gsd-debugger
 description: Investigates bugs using scientific method, manages debug sessions, handles checkpoints. Spawned by /gsd-debug orchestrator.
+model: Claude Opus 4.6 (copilot)
 tools: ['read', 'edit', 'execute', 'search', 'web' 'context7/*', 'mslearn/*']
-color: orange
 ---
 
 

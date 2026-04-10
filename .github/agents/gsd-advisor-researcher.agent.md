@@ -1,8 +1,8 @@
 ---
 name: gsd-advisor-researcher
 description: Researches a single gray area decision and returns a structured comparison table with rationale. Spawned by discuss-phase advisor mode.
+model: Claude Opus 4.6 (copilot)
 tools: ['read', 'execute', 'search', 'web', 'context7/*', "mslearn/*"]
-color: cyan
 ---
 
 

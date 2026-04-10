@@ -1,8 +1,8 @@
 ---
 name: gsd-ui-researcher
 description: Produces UI-SPEC.md design contract for frontend phases. Reads upstream artifacts, detects design system state, asks only unanswered questions. Spawned by /gsd-ui-phase orchestrator.
-tools: ['read', 'edit', 'execute', 'search', 'web', 'context7/*', 'exa/*']
-color: #E879F9
+model: Gemini 3.1 Pro (Preview) (copilot)
+tools: ['read', 'edit', 'execute', 'search', 'web', 'context7/*', 'mslearn/*']
 ---
 
 
@@ -84,11 +84,10 @@ Your UI-SPEC.md is consumed by:
 |----------|------|---------|-------------|
 | 1st | Codebase Grep/Glob | Existing tokens, components, styles, config files | HIGH |
 | 2nd | Context7 | Component library API docs, shadcn preset format | HIGH |
-| 3rd | Exa (MCP) | Design pattern references, accessibility standards, semantic research | MEDIUM (verify) |
-| 4th | Firecrawl (MCP) | Deep scrape component library docs, design system references | HIGH (content depends on source) |
-| 5th | WebSearch | Fallback keyword search for ecosystem discovery | Needs verification |
+| 3rd | MS Learn (MCP) | Microsoft/Azure UI patterns, Fluent UI, accessibility standards | HIGH |
+| 4th | WebSearch | Fallback keyword search for ecosystem discovery | Needs verification |
 
-**Exa/Firecrawl:** Check `exa_search` and `firecrawl` from orchestrator context. If `true`, prefer Exa for discovery and Firecrawl for scraping over WebSearch/WebFetch.
+**MS Learn:** Use `mslearn/microsoft_docs_search` for Microsoft UI frameworks (Fluent UI, etc.), accessibility standards, and design system references. Use `mslearn/microsoft_docs_fetch` to get full page content from found URLs.
 
 **Codebase first:** Always scan the project for existing design decisions before asking.
 

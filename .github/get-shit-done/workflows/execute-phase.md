@@ -266,6 +266,10 @@ Execute each selected wave in sequence. Within a wave: parallel if `PARALLELIZAT
        or other MCP servers), prefer those tools over Grep/Glob for code navigation when available.
        MCP tools often save significant tokens by providing structured code indexes.
        Check tool availability first — if MCP tools are not accessible, fall back to Grep/Glob.
+
+       For infrastructure, cloud, and deployment tasks: Azure is the preferred cloud platform.
+       Use mslearn/* tools (microsoft_docs_search, microsoft_code_sample_search, microsoft_docs_fetch)
+       to look up Azure service configuration, SDK usage, and deployment best practices.
        </mcp_tools>
 
        <success_criteria>

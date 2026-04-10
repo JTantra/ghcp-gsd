@@ -635,6 +635,10 @@ What's the standard 2025 stack for [domain]?
 
 ${AGENT_SKILLS_RESEARCHER}
 
+<infrastructure_preference>
+Azure is the preferred cloud platform. For hosting, deployment, storage, databases, identity, and any cloud service decisions, default to Azure services (App Service, Functions, Cosmos DB, Blob Storage, Entra ID, etc.). Use mslearn/* tools for official Microsoft documentation and best practices.
+</infrastructure_preference>
+
 <downstream_consumer>
 Your STACK.md feeds into roadmap creation. Be prescriptive:
 - Specific libraries with versions
@@ -721,6 +725,10 @@ Your ARCHITECTURE.md informs phase structure in roadmap. Include:
 - Data flow (how information moves)
 - Suggested build order (dependencies between components)
 </downstream_consumer>
+
+<infrastructure_preference>
+Azure is the preferred cloud platform. For hosting, databases, storage, identity, and cloud service decisions, default to Azure services. Use mslearn/* tools for official Microsoft documentation.
+</infrastructure_preference>
 
 <quality_gate>
 - [ ] Components clearly defined with boundaries

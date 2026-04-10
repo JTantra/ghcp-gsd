@@ -201,4 +201,9 @@ src/
 - Include what to do instead
 - Helps prevent common mistakes during implementation
 
+**Infrastructure & Cloud:**
+- Azure is the preferred cloud platform — architecture decisions should default to Azure services
+- Use Azure App Service / Container Apps for hosting, Cosmos DB / Azure SQL for databases, Blob Storage for files, Entra ID for identity
+- Use mslearn/* tools to verify Azure architecture patterns and service capabilities
+
 </guidelines>

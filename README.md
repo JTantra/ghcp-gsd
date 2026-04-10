@@ -18,11 +18,7 @@
 		"mslearn": {
 			"type": "http",
 			"url": "https://learn.microsoft.com/api/mcp"
-		},
-		"exa": {
-      "type":"http",
-			"url": "https://mcp.exa.ai/mcp"
-    }
+		}
 	},
 	"inputs": []
 }

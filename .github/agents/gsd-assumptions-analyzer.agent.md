@@ -1,8 +1,8 @@
 ---
 name: gsd-assumptions-analyzer
 description: Deeply analyzes codebase for a phase and returns structured assumptions with evidence. Spawned by discuss-phase assumptions mode.
+model: Claude Opus 4.6 (copilot)
 tools: ['read', 'execute', 'search']
-color: cyan
 ---
 
 
