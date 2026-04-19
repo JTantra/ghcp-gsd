@@ -1,0 +1,169 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="GSD Workflow Loop" id="gsd-workflow">
+    <mxGraphModel dx="906" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;SDD Workflow Loop&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #888;&quot;&gt;The Spec-Driven Development Framework&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="500" x="800" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="loop_bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#AAAAAA;fontSize=11;dashed=1;dashPattern=8 4;verticalAlign=top;align=left;spacingLeft=12;spacingTop=5;arcSize=4;strokeWidth=1;" value="&lt;b style=&quot;font-size: 11px;&quot;&gt;⟳ PHASE LOOP&lt;/b&gt;&amp;nbsp;&amp;nbsp;&lt;font style=&quot;font-size: 9px; color: #999;&quot;&gt;repeat for each phase&lt;/font&gt;" vertex="1">
+          <mxGeometry height="475" width="1215" x="328" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#333333;fontColor=#ffffff;strokeColor=#1a1a1a;fontSize=11;fontFamily=Helvetica;" value="&lt;b&gt;START&lt;/b&gt;" vertex="1">
+          <mxGeometry height="35" width="45" x="60" y="87" as="geometry" />
+        </mxCell>
+        <mxCell id="map_codebase" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;arcSize=20;dashed=1;dashPattern=8 4;strokeWidth=1;" value="&lt;b&gt;/gsd-map-codebase&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Analyze existing codebase (brownfield)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="190" x="135" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="h1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;arcSize=15;strokeWidth=2;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;1. Initialize Project&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#4472C4&quot; style=&quot;font-size: 9px;&quot;&gt;/gsd-new-project&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="190" x="135" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="h2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;arcSize=15;strokeWidth=1.5;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;2. Discuss Phase&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#4472C4&quot; style=&quot;font-size: 9px;&quot;&gt;/gsd-discuss-phase N&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="190" x="355" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="h3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;arcSize=15;strokeWidth=1.5;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;3. Plan Phase&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#4472C4&quot; style=&quot;font-size: 9px;&quot;&gt;/gsd-plan-phase N&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="190" x="575" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="h4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;arcSize=15;strokeWidth=1.5;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;4. Execute Phase&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#4472C4&quot; style=&quot;font-size: 9px;&quot;&gt;/gsd-execute-phase N&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="190" x="795" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="h5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;arcSize=15;strokeWidth=1.5;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;5. Verify Work&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#4472C4&quot; style=&quot;font-size: 9px;&quot;&gt;/gsd-verify-work N&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="190" x="1015" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="issues" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;strokeWidth=1.5;" value="&lt;b style=&quot;font-size: 10px;&quot;&gt;Issues&lt;br&gt;Found?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52" width="100" x="1238" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="h6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;arcSize=15;strokeWidth=1.5;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;6. Ship&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#4472C4&quot; style=&quot;font-size: 9px;&quot;&gt;/gsd-ship N&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="190" x="1370" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="more" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;strokeWidth=1.5;" value="&lt;b style=&quot;font-size: 10px;&quot;&gt;More&lt;br&gt;Phases?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52" width="100" x="1593" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="h7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;arcSize=15;strokeWidth=2;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;7. Complete Milestone&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#4472C4&quot; style=&quot;font-size: 9px;&quot;&gt;/gsd-complete-milestone&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="190" x="1725" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="nextm" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;strokeWidth=1.5;" value="&lt;b style=&quot;font-size: 10px;&quot;&gt;Next&lt;br&gt;Milestone?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52" width="100" x="1948" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#333333;fontColor=#ffffff;strokeColor=#1a1a1a;fontSize=11;fontFamily=Helvetica;" value="&lt;b&gt;END&lt;/b&gt;" vertex="1">
+          <mxGeometry height="35" width="35" x="2085" y="87" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;fontSize=9;arcSize=8;strokeWidth=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=5;spacingRight=6;" value="&lt;b style=&quot;font-size: 9px;&quot;&gt;⚡ Activities&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;• Questions — ask until idea is fully understood&lt;br&gt;• Research — spawn parallel domain agents&lt;br&gt;• Requirements — extract v1/v2 scope&lt;br&gt;• Roadmap — create phased plan&lt;/font&gt;&lt;hr style=&quot;border:0;border-top:1px solid #ccc;margin:5px 0 3px;&quot;&gt;&lt;b style=&quot;font-size: 9px;&quot;&gt;📄 Artifacts&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px; color: #555;&quot;&gt;PROJECT.md&lt;br&gt;REQUIREMENTS.md&lt;br&gt;ROADMAP.md&lt;br&gt;STATE.md&lt;br&gt;.planning/research/&lt;/font&gt;" vertex="1">
+          <mxGeometry height="235" width="190" x="135" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;fontSize=9;arcSize=8;strokeWidth=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=5;spacingRight=6;" value="&lt;b style=&quot;font-size: 9px;&quot;&gt;⚡ Activities&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;• Analyze phase for gray areas&lt;br&gt;• Identify visual/API/content decisions&lt;br&gt;• Capture preferences &amp;amp; decisions&lt;br&gt;• Shape implementation vision&lt;/font&gt;&lt;hr style=&quot;border:0;border-top:1px solid #ccc;margin:5px 0 3px;&quot;&gt;&lt;b style=&quot;font-size: 9px;&quot;&gt;📄 Artifacts&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px; color: #555;&quot;&gt;{N}-CONTEXT.md&lt;/font&gt;" vertex="1">
+          <mxGeometry height="195" width="190" x="355" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;fontSize=9;arcSize=8;strokeWidth=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=5;spacingRight=6;" value="&lt;b style=&quot;font-size: 9px;&quot;&gt;⚡ Activities&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;• Research implementation approaches&lt;br&gt;• Create 2-3 atomic task plans (XML)&lt;br&gt;• Verify plans against requirements&lt;br&gt;• Loop until plans pass checker&lt;/font&gt;&lt;hr style=&quot;border:0;border-top:1px solid #ccc;margin:5px 0 3px;&quot;&gt;&lt;b style=&quot;font-size: 9px;&quot;&gt;📄 Artifacts&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px; color: #555;&quot;&gt;{N}-RESEARCH.md&lt;br&gt;{N}-{M}-PLAN.md&lt;/font&gt;" vertex="1">
+          <mxGeometry height="210" width="190" x="575" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;fontSize=9;arcSize=8;strokeWidth=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=5;spacingRight=6;" value="&lt;b style=&quot;font-size: 9px;&quot;&gt;⚡ Activities&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;• Run plans in parallel waves&lt;br&gt;• Fresh 200K context per plan&lt;br&gt;• Atomic commit per task&lt;br&gt;• Verify against phase goals&lt;/font&gt;&lt;hr style=&quot;border:0;border-top:1px solid #ccc;margin:5px 0 3px;&quot;&gt;&lt;b style=&quot;font-size: 9px;&quot;&gt;📄 Artifacts&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px; color: #555;&quot;&gt;{N}-{M}-SUMMARY.md&lt;br&gt;{N}-VERIFICATION.md&lt;/font&gt;" vertex="1">
+          <mxGeometry height="210" width="190" x="795" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="d5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;fontSize=9;arcSize=8;strokeWidth=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=5;spacingRight=6;" value="&lt;b style=&quot;font-size: 9px;&quot;&gt;⚡ Activities&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;• Extract testable deliverables&lt;br&gt;• Walk through UAT items&lt;br&gt;• Auto-diagnose failures&lt;br&gt;• Create verified fix plans&lt;/font&gt;&lt;hr style=&quot;border:0;border-top:1px solid #ccc;margin:5px 0 3px;&quot;&gt;&lt;b style=&quot;font-size: 9px;&quot;&gt;📄 Artifacts&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px; color: #555;&quot;&gt;{N}-UAT.md&lt;br&gt;Fix plans (if issues)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="210" width="190" x="1015" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="d6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;fontSize=9;arcSize=8;strokeWidth=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=5;spacingRight=6;" value="&lt;b style=&quot;font-size: 9px;&quot;&gt;⚡ Activities&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;• Create PR from verified work&lt;br&gt;• Auto-generate PR description&lt;/font&gt;&lt;hr style=&quot;border:0;border-top:1px solid #ccc;margin:5px 0 3px;&quot;&gt;&lt;b style=&quot;font-size: 9px;&quot;&gt;📄 Artifacts&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px; color: #555;&quot;&gt;Pull Request&lt;/font&gt;" vertex="1">
+          <mxGeometry height="150" width="190" x="1370" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="d7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;fontSize=9;arcSize=8;strokeWidth=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=5;spacingRight=6;" value="&lt;b style=&quot;font-size: 9px;&quot;&gt;⚡ Activities&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;• Archive milestone artifacts&lt;br&gt;• Tag release in git&lt;/font&gt;&lt;hr style=&quot;border:0;border-top:1px solid #ccc;margin:5px 0 3px;&quot;&gt;&lt;b style=&quot;font-size: 9px;&quot;&gt;📄 Artifacts&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px; color: #555;&quot;&gt;Git tag&lt;br&gt;Archived milestone&lt;/font&gt;" vertex="1">
+          <mxGeometry height="165" width="190" x="1725" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="fix" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;arcSize=15;strokeWidth=1.5;" value="&lt;b&gt;Create Fix Plans&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Auto-diagnose &amp;amp; re-plan&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="1233" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="newm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;arcSize=15;strokeWidth=1.5;" value="&lt;b&gt;/gsd-new-milestone&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Define next version scope&lt;br&gt;Research → Requirements → Roadmap&lt;/font&gt;" vertex="1">
+          <mxGeometry height="55" width="140" x="1928" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="quick" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;arcSize=15;dashed=1;dashPattern=6 4;strokeWidth=1;" value="&lt;b&gt;/gsd-quick&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Ad-hoc tasks with GSD guarantees&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="54" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="autonext" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;arcSize=15;dashed=1;dashPattern=6 4;strokeWidth=1;" value="&lt;b&gt;/gsd-next&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Auto-detect &amp;amp; run next step&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="234" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="note_agents" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fillColor=#FFF9E6;strokeColor=#E6D9A6;fontSize=9;arcSize=15;strokeWidth=1;" value="&lt;font style=&quot;font-size: 9px; color: #666;&quot;&gt;&lt;b&gt;Multi-Agent Orchestration&lt;/b&gt;&lt;br&gt;Each stage: thin orchestrator spawns&lt;br&gt;specialized subagents with fresh&lt;br&gt;200K context windows&lt;/font&gt;" vertex="1">
+          <mxGeometry height="55" width="175" x="1570" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="legend2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F7F7;strokeColor=#CCCCCC;fontSize=9;arcSize=8;align=left;verticalAlign=top;spacingLeft=8;spacingTop=5;spacingRight=8;" value="&lt;b style=&quot;font-size: 10px;&quot;&gt;Legend&lt;/b&gt;&lt;hr style=&quot;border:0;border-top:1px solid #ccc;margin:4px 0;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;■ &lt;font color=&quot;#6c8ebf&quot;&gt;Blue&lt;/font&gt; — Core workflow steps&lt;br&gt;◆ &lt;font color=&quot;#d6b656&quot;&gt;Yellow&lt;/font&gt; — Decision points&lt;br&gt;■ &lt;font color=&quot;#82b366&quot;&gt;Green&lt;/font&gt; — Optional / milestone mgmt&lt;br&gt;■ &lt;font color=&quot;#b85450&quot;&gt;Red&lt;/font&gt; — Issue remediation&lt;br&gt;■ &lt;font color=&quot;#9673a6&quot;&gt;Purple&lt;/font&gt; — Shortcuts &amp;amp; automation&lt;/font&gt;" vertex="1">
+          <mxGeometry height="115" width="210" x="1875" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="h1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_map" edge="1" parent="1" source="map_codebase" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=1;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="h1" value="&lt;font style=&quot;font-size: 8px; color: #82b366;&quot;&gt;optional&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="h1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="h2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="h2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="h3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="h3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="h4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="h4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="h5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="h5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="issues">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="issues" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="h6" value="&lt;b&gt;No&lt;/b&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="issues" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="fix" value="&lt;b style=&quot;color: #b85450;&quot;&gt;Yes&lt;/b&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="fix" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="h4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="890" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="h6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="more">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="more" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="h2" value="&lt;b style=&quot;color: #6c8ebf;&quot;&gt;Yes&lt;/b&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1643" y="510" />
+              <mxPoint x="450" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="more" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="h7" value="&lt;b&gt;No&lt;/b&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="h7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nextm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="nextm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="newm" value="&lt;b style=&quot;color: #82b366;&quot;&gt;Yes&lt;/b&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="newm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.15;entryY=1;entryDx=0;entryDy=0;" target="h2" value="&lt;font style=&quot;font-size: 8px; color: #82b366;&quot;&gt;new roadmap&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="384" y="448" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="nextm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="end" value="&lt;b&gt;No&lt;/b&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_quick" edge="1" parent="1" source="quick" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=1;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=open;endFill=0;" target="h4" value="&lt;font style=&quot;font-size: 8px; color: #9673a6;&quot;&gt;bypasses&lt;br&gt;full planning&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="490" />
+              <mxPoint x="890" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_next" edge="1" parent="1" source="autonext" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=1;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.9;entryDx=0;entryDy=0;endArrow=open;endFill=0;" target="loop_bg" value="&lt;font style=&quot;font-size: 8px; color: #9673a6;&quot;&gt;auto-detects&lt;br&gt;next step&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
